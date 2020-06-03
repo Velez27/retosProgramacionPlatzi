@@ -1,7 +1,7 @@
 // Reto #1
 
 function longitudString(){
-    let curso = prompt(’¿Cual es el nombre de tu curso favorito?’);
+    let curso = prompt('¿Cual es el nombre de tu curso favorito?');
     
     console.log(`La longitud del nombre de tu curso favorito es: ${curso.length}`)
     }
@@ -11,9 +11,9 @@ function longitudString(){
     // Reto #2
     
     function sumaStrings(){
-    let nombre = prompt(’¿Cual es tu nombre?’);
-    let apellido = prompt(’¿Cual es tu apellido?’);
-    let comidaFavorita = prompt(’¿Cual es tu comida favorita?’);
+    let nombre = prompt('¿Cual es tu nombre?');
+    let apellido = prompt('¿Cual es tu apellido?');
+    let comidaFavorita = prompt('¿Cual es tu comida favorita?');
     
     console.log(`Hola, mi nombre es ${nombre} ${apellido} y mi comida favorita es ${comidaFavorita}`);
     }
@@ -23,9 +23,9 @@ function longitudString(){
     // Reto #3
     
     function ajustaIniciales(){
-    let nombre = prompt(‘Dame tu nombre, en minusculas’);
-    let apellido = prompt(‘Dame tu apellido, en minusculas’);
-    let pais = prompt(‘Dame tu pais de origen, en minisculas’);
+    let nombre = prompt('Dame tu nombre, en minusculas');
+    let apellido = prompt('Dame tu apellido, en minusculas');
+    let pais = prompt('Dame tu pais de origen, en minisculas');
     
     nombre = nombre[0].toUpperCase() + nombre.slice(1);
     apellido = apellido[0].toUpperCase() + apellido.slice(1);
@@ -39,7 +39,7 @@ function longitudString(){
     // Reto #4
     
     function stringFragmentado(){
-    let oracion = prompt(‘Dame una oracion de 10 o mas caracteres’);
+    let oracion = prompt('Dame una oracion de 10 o mas caracteres');
     let oracionLongitud = oracion.length;
     
     alert(`A continuacion me daras un rango inicial y un rango final entre los valores 1 y ${oracionLongitud}`);
@@ -55,8 +55,8 @@ function longitudString(){
     // Reto #5
     
     function mayusculasMinusculas(){
-    let palabraUno = prompt(‘Dame una palabra cualquiera’);
-    let palabraDos = prompt(‘Dame otra palabra cualquiera’);
+    let palabraUno = prompt('Dame una palabra cualquiera');
+    let palabraDos = prompt('Dame otra palabra cualquiera');
     
     console.log(`La primer palabra fue: ${palabraUno.toUpperCase()} \n La segunda palabra fue: ${palabraDos.toLowerCase()}`);
     }
@@ -66,7 +66,7 @@ function longitudString(){
     // Reto #6
     
     function nombreCortosYLargos(){
-    let nombre = prompt(’¿Cual es tu nombre?’);
+    let nombre = prompt('¿Cual es tu nombre?');
     let nombreLongitud = nombre.length;
     
     if(nombreLongitud > 5){
@@ -82,11 +82,11 @@ function longitudString(){
     // Reto #7
     
     function puercoLatino(){
-    let palabra = prompt(‘Dame una palabra’);
+    let palabra = prompt('Dame una palabra');
     let primerLetra = palabra[0];
-    let vocales = [‘A’, ‘E’, ‘I’, ‘O’, ‘U’];
+    let vocales = ['A', 'E', 'I', 'O', 'U'];
     let flag = false;
-    let palabraFinal = ‘’;
+    let palabraFinal = '';
     
     for(let i = 0; i < vocales.length; i++){
         if(primerLetra.toUpperCase() === vocales[i]){

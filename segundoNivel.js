@@ -1,6 +1,6 @@
 // Reto #1
 
-functionnumeroMayorYMenor(){
+function numeroMayorYMenor(){
     
     let num1 = parseInt(prompt('Dame el primer numero'));
     let num2 = parseInt(prompt('Dame el segundo numero'));
@@ -8,7 +8,7 @@ functionnumeroMayorYMenor(){
 
     if(num1 > num2){
         console.log(`El numero ${num1} es mayor que ${num2} y existe una diferencia de ${Math.abs(diferencia)}`);
-    }elseif(num1 === num2){
+    }else if(num1 === num2){
         console.log(`Los numeros ${num1} y ${num2} son iguales, por lo tanto no hay diferencia`);
     }else{
         console.log(`El numero ${num2} es mayor que ${num1} y existe una diferencia de ${Math.abs(diferencia)}`);
@@ -19,7 +19,7 @@ numeroMayorYMenor();
 
 // Reto #2
 
-functionrangoNumero(){
+function rangoNumero(){
 
     let numLimite = parseInt(prompt('Dame el primer valor que sera el limite'));
     let numComparar = parseInt(prompt('Dame el segundo valor para comparar'));
@@ -35,7 +35,7 @@ rangoNumero();
 
 
 // Reto #3
-functionrangoNumeroCambiante(){
+function rangoNumeroCambiante(){
 
     let numLimiteSuperior = parseInt(prompt('Dame el valor del limite superior'));
     let numLimiteInferior = parseInt(prompt('Dame el valor del limite inferior'));
@@ -43,9 +43,9 @@ functionrangoNumeroCambiante(){
 
     if(numComparar >= numLimiteInferior && numComparar <= numLimiteSuperior){
         console.log(`El numero ${numComparar} esta dentro del rango establecido`);
-    }elseif(numComparar < numLimiteInferior){
+    }else if(numComparar < numLimiteInferior){
         console.log(`El numero ${numComparar} esta por debajo del rango inferior establecido`);
-    }elseif(numComparar > numLimiteSuperior){
+    }else if(numComparar > numLimiteSuperior){
         console.log(`El numero ${numComparar} esta por encima del rango superior establecido`);
     }
 }
@@ -54,7 +54,7 @@ rangoNumeroCambiante();
 
 // Reto #4
 
-functionILikeTurtles(){
+function ILikeTurtles(){
 
     let animalUsuario = prompt('Escribe tu animal favorito');
     let animalFavorito = 'TORTUGA';
@@ -72,7 +72,7 @@ ILikeTurtles();
 
 // Reto #5
 
-functioncomoEstaElClima(){
+function comoEstaElClima(){
 
     let estaLloviendo = prompt('¿Esta lloviendo?');
     let respuesta = estaLloviendo.toUpperCase();
@@ -82,10 +82,10 @@ functioncomoEstaElClima(){
         let respuesta = estaHaciendoViento.toUpperCase();
         if(respuesta === 'SI'){
             console.log('Hey! Hace mucho viento para salir con una sombrilla ');
-        }elseif(respuesta === 'NO'){
+        }else if(respuesta === 'NO'){
             console.log('LLeva una sombrilla :)');
         }
-    }elseif(respuesta === 'NO'){
+    }else if(respuesta === 'NO'){
         console.log('Que tengas bonito dia =)');
     }
 }
@@ -94,7 +94,7 @@ comoEstaElClima();
 
 // Reto #6
 
-functionedadPermitida(){
+function edadPermitida(){
 
     let edadUsuario = parseInt(prompt('¿Cual es tu edad?'));
     
@@ -113,28 +113,28 @@ edadPermitida();
 
 // Reto #7
 
-functionmensajesOpcionales(){
+function mensajesOpcionales(){
 
     let opcionUsuario = parseInt(prompt('Dame un valor entre el 1 y el 6'));
 
     if(opcionUsuario >= 1 && opcionUsuario <= 6){
         switch (opcionUsuario) {
-            case1:
+            case 1:
                 console.log('Hoy aprenderemos sobre programacion')
                 break;
-            case2:
+            case 2:
                 console.log('¿Que tal tomar un curso sobre marketing digital?')
                 break;
-            case3:
+            case 3:
                 console.log('Hoy es un gran dia para comenzar a aprender de diseño');
                 break;
-            case4:
+            case 4:
                 console.log('¿Y si aprendemos algo de negocios online?');
                 break;
-            case5:
+            case 5:
                 console.log('Veamos un par de clases sobre produccion audiovisual');
                 break;
-            case6:
+            case 6:
                 console.log('Tal vez sea bueno desarrollar una habilidad blanda en Platzi');
                 break;
         }
